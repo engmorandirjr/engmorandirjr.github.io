@@ -15,13 +15,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 100vh;
+      height: 100%;
     }
 	
-	.title {
-	   text-wrap: wrap;
-	   width: 40rem;
-	}
+    .title {
+      text-wrap: wrap;
+      width: 40rem;
+    }
 
     header {
       text-align: center;
@@ -39,13 +39,30 @@
       border: .09rem solid #ffcc00;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 550px) {
       section {
         border-top: .09rem solid #ffcc00;
         border-bottom: .09rem solid #ffcc00;
         border-right: .09rem solid #0000;
         border-left: .09rem solid #0000;
         border-radius: 0;
+      }
+
+      header .title {
+        font-size: 1.7rem;
+        width: 18rem;
+      }
+
+      .subscribe-section h2 {
+        text-align: center;
+        font-size: 1.9rem;
+      }
+    }
+
+    @media (max-width: 290px) {
+      header .title {
+        font-size: 1.4rem;
+        width: 14rem;
       }
     }
 
@@ -91,17 +108,20 @@
 
     .contact-link {
       color: #6cb2eb;
-      text-decoration: none;
     }
 
     .contact-link:hover {
       text-decoration: underline;
     }
 
+    .contact-link i {
+      width: 20px;
+    }
+
     .subscribe-section {
-	text-align: center;
-	font-size:2rem;
-	}
+      text-align: center;
+      font-size: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -110,7 +130,7 @@
   </header>
 
   <section>
-    <h2><i class="fa-solid fa-bullseye"></i> O Professor</h2>
+    <h2><i class="fa-solid fa-person-chalkboard"></i> O Professor</h2>
     <ul>
       <li>
         <strong>Graduado em Engenharia civil - UNOESTE</strong><br>
@@ -128,7 +148,7 @@
     </section>
 
       <section>
-        <h2><i class="fa-solid fa-bullseye"></i> Aulas e Turmas</h2>
+        <h2><i class="fa-solid fa-people-group"></i> Aulas e Turmas</h2>
         <ul>
       <li>
         <strong>As aulas serão ministradas no modelo presencial e/ou presencial remoto</strong><br>
@@ -284,7 +304,7 @@
     <p><em>
       <h4>
         <i class="alert fa-solid fa-triangle-exclamation"></i>
-        OBS: Condições de pagamento acima são para parcelamento no Pix. Lembrando que para o parcelamento no pix, a quantidade de parcelas será o mesmo tempo de duração do curso. No cartão de crédito, os valores são os mesmos, porém com acréscimo dos juros da máquina.</em></p>
+        OBS: Condições de pagamento acima são para parcelamento no Pix. Lembrando que para o parcelamento no Pix, a quantidade de parcelas será o mesmo tempo de duração do curso. No cartão de crédito, os valores são os mesmos, porém com acréscimo dos juros da máquina.</em></p>
       </h4>
   </section>
   
@@ -297,10 +317,38 @@
 
   <section>
     <h2><i class="fa-solid fa-address-book"></i> Para Mais Informações</h2> 
-      <p><a target="_blank" href="https://wa.me/55189966660433" class="contact-link"><i class="fab fa-whatsapp"></i>(18)99666-0433</a></p>
-      <p><a target="_blank" href="mailto:mmbjrma@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> mmbjrma@gmail.com</a></p>
-	  <p><i class="fa-solid fa-location-dot"></i> Rua Rui Barbosa, nº 1737, Jd. Sta. Helena</p>
+      <p>
+        <a target="_blank" href="https://wa.me/55189966660433" class="contact-link">
+          <i class="fab fa-whatsapp"></i>(18)99666-0433
+        </a>
+      </p>
+      <p>
+        <a target="_blank" href="mailto:mmbjrma@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i>mmbjrma@gmail.com
+        </a>
+      </p>
+	    <p>
+        <a style="cursor: pointer;" onclick="openGoogleMapsWith()" href="#" class="contact-link">
+          <i class="fa-solid fa-location-dot"></i>Rui Barbosa, nº 1737, Jd. Sta. Helena
+        </a>
+      </p>
     </div>
   </section>
+
+
+  <script>
+    function openGoogleMapsWith(){
+      const lat = "-22.119333599999997"
+      const long = "-51.399502399999996"
+
+      if( (navigator.platform.indexOf("iPhone") != -1) 
+            || (navigator.platform.indexOf("iPod") != -1)
+            || (navigator.platform.indexOf("iPad") != -1)) {
+        window.open(`maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${lat},${long}`);
+        return
+      }
+      window.open(`https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${lat},${long}`);
+    }
+  </script>
 </body>
 </html>
