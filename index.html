@@ -1,427 +1,436 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso de Cálculo Estrutural de Elementos de Concreto Armado</title>
+  <meta name="description"
+    content="Curso completo de Cálculo Estrutural de Concreto Armado com o Eng. Morandi Jr. Aprenda dimensionamento de vigas, lajes, pilares e fundações. Turmas regulares e intensivas disponíveis. Inscrições abertas!">
+  <meta name="keywords"
+    content="curso cálculo estrutural, engenharia civil, concreto armado, dimensionamento estrutural, projeto estrutural, vigas, lajes, pilares, fundações, Eberick, engenheiro estrutural, curso online, curso presencial, formação em estruturas">
+  <meta name="author" content="Eng. Morandi Jr.">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Portuguese">
+  <meta name="revisit-after" content="7 days">
+  <meta name="generator" content="HTML5">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    body {
-      background-color: #1a1a1a;
-      color: #dddddd;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100%;
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://engmorandirjr.github.io">
+  <meta property="og:title" content="Curso de Cálculo Estrutural - Eng. Morandi Jr.">
+  <meta property="og:description"
+    content="Aprenda cálculo estrutural com um profissional experiente. Curso completo de elementos de concreto armado, incluindo dimensionamento de vigas, lajes, pilares e fundações.">
+  <meta property="og:image" content="https://engmorandirjr.github.io/assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://engmorandirjr.github.io">
+  <meta property="twitter:title" content="Curso de Cálculo Estrutural - Eng. Morandi Jr.">
+  <meta property="twitter:description"
+    content="Aprenda cálculo estrutural com um profissional experiente. Curso completo de elementos de concreto armado, incluindo dimensionamento de vigas, lajes, pilares e fundações.">
+  <meta property="twitter:image" content="https://engmorandirjr.github.io/assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+
+  <title>Curso de Cálculo Estrutural de Concreto Armado | Eng. Morandi Jr.</title>
+
+  <!-- Schema.org markup for Google+ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Curso de Cálculo Estrutural de Elementos de Concreto Armado",
+    "description": "Curso completo de cálculo estrutural com foco em elementos de concreto armado, incluindo dimensionamento de vigas, lajes, pilares e fundações.",
+    "provider": {
+      "@type": "Person",
+      "name": "Eng. Morandi Jr.",
+      "jobTitle": "Engenheiro Civil e Professor",
+      "url": "https://engmorandirjr.github.io"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "2100",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock"
     }
-	
-    .title {
-      text-wrap: wrap;
-      width: 40rem;
-    }
+  }
+  </script>
 
-    header {
-      text-align: center;
-      padding: 20px;
-    }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    section {
-      width: 90%;
-      max-width: 800px;
-      margin: 20px auto;
-      border-radius: 10px;
-      background-color: #333333;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 22px;
-      border: .09rem solid #ffcc00;
-    }
-
-    @media (max-width: 550px) {
-      section {
-        border-top: .09rem solid #ffcc00;
-        border-bottom: .09rem solid #ffcc00;
-        border-right: .09rem solid #0000;
-        border-left: .09rem solid #0000;
-        border-radius: 0;
-      }
-
-      header .title {
-        font-size: 1.7rem;
-        width: 18rem;
-      }
-
-      .subscribe-section h2 {
-        text-align: center;
-        font-size: 1.9rem;
-      }
-    }
-
-    @media (max-width: 290px) {
-      header .title {
-        font-size: 1.4rem;
-        width: 14rem;
-      }
-    }
-
-    section ul {
-      padding: 23px;
-    }
-
-    section .item-description {
-      color: #afafaf;
-    }
-
-    .icon-title {
-      color: lightslategray;
-    }
-
-    h2 {
-      color: #ffcc00;
-    }
-
-    h4 {
-      color: #ddb000de;
-    }
-
-    h5 {
-      color: #e9ba00b6;
-    }
-
-    .alert {
-      color: #d9534f;
-    }
-
-    li {
-      margin-bottom: 15px;
-    }
-
-    ul li strong {
-      line-height: 1.8; /* Ajuste o valor conforme necessário para o espaçamento desejado */
-    }
-
-    .contact-link i {
-      margin-right: 5px; /* Espaço à direita do ícone para separá-lo do texto */
-    }
-
-    .contact-link {
-      color: #6cb2eb;
-    }
-
-    .contact-link:hover {
-      text-decoration: underline;
-    }
-
-    .contact-link i {
-      width: 20px;
-    }
-
-    .subscribe-section {
-      text-align: center;
-      font-size: 2rem;
-    }
-  </style>
-
-	<!-- Event snippet for Visualização de página conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-16633600614/8cfmCLTX178ZEOa0wvs9',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
-<!-- Event snippet for Visualização de página conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-16633600614/8cfmCLTX178ZEOa0wvs9',
-      'value': 1.0,
-      'currency': 'BRL'
-  });
-</script>
-	
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
 </head>
+
 <body>
+  <nav class="nav-bar">
+    <div class="nav-content">
+      <a href="#" class="nav-logo" aria-label="Página inicial">
+        <i class="fa-solid fa-city" aria-hidden="true"></i>
+        <span>Eng. Morandir Jr.</span>
+      </a>
+      <button class="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="#professor" class="nav-link" aria-label="Seção do Professor">Professor</a>
+        <a href="#conteudo" class="nav-link" aria-label="Conteúdo do Curso">Conteúdo</a>
+        <a href="#valores" class="nav-link" aria-label="Valores do Curso">Valores</a>
+        <a href="#contato" class="nav-link" aria-label="Informações de Contato">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <button id="back-to-top" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
   <header>
-    <h1 class="title">Curso de Cálculo Estrutural de Elementos de Concreto Armado <i class="fa-solid fa-city icon-title"></i> </h1>
+    <div class="header-content">
+      <div class="title-container">
+        <h1 class="title">
+          <i class="fa-solid fa-city icon-title" aria-hidden="true"></i>
+          <span class="title-text">
+            <span class="title-main">Curso de Cálculo Estrutural</span>
+            <span class="title-sub">Elementos de Concreto Armado</span>
+          </span>
+        </h1>
+        <div class="title-tag">
+          <i class="fa-solid fa-certificate"></i>
+          <span>Curso Profissional</span>
+        </div>
+      </div>
+      <p class="header-subtitle">Aprenda com um profissional experiente e torne-se um especialista em estruturas</p>
+    </div>
   </header>
 
-  <section>
-    <h2><i class="fa-solid fa-person-chalkboard"></i> O Professor</h2>
-    <ul>
-      <li>
-        <strong>Graduado em Engenharia civil - UNOESTE</strong><br>
-      </li>
-      
-      <li>
-        <strong>Pós graduado em Engenharia de Estruturas - UNOESTE</strong><br>
-        
-      </li>
-
-      <li>
-        <strong>Docente de curso livre na área de engenharia de estruturas</strong><br>
-
-      </li>
-	    
-      <li>
-        <strong>Docente no curso de Pós graduação em "Engenharia de estruturas de concreto armado e alvenaria estrutural" - UNOESTE</strong><br>
-        
-      </li>
-        
-      <li>
-        <strong>Trabalha com elaboração de projetos estruturais - 2MB Engenharia e Projetos</strong><br>
-        
-      </li>
-    </section>
-
-      <section>
-        <h2><i class="fa-solid fa-people-group"></i> Aulas e Turmas</h2>
-        <ul>
-      <li>
-        <strong>As aulas serão ministradas no modelo presencial e/ou presencial remoto</strong><br>
-        
-      </li>
-
-      <li>
-        <strong>As turmas presenciais serão de no máximo 6 alunos</strong><br>
-        
-      </li>
-
-      <li>
-        <strong>Aulas expositivas</strong><br>
-        
-      </li>
-
-      <li>
-        <strong>Realização de exercícios em sala</strong><br>
-        
-      </li>
-
-      <li>
-        <strong>Trabalhos para a fixação do conteúdo ministrado</strong><br>
-        
-      </li>
-    </section>
-
-  <section>
-    <h2><i class="fa-solid fa-bullseye"></i> Conteúdo Programático do Curso</h2>
-    <ul>
-      <li>
-        <strong>Conversão de Unidades</strong><br>
-        <div class="item-description">
-        Antes de qualquer cálculo é imprescindível entender o processo de conversão de unidades, já que muitas vezes necessitamos converter as unidades para prosseguir com os calculos.
-	</div>
-      </li>
-	    
-      <li>
-        <strong>Cálculo de Esforços Simples</strong><br>
-        <div class="item-description">
-          Esforço Normal: São esforços de compressão ou tração que atuam perpendicularmente à seção transversal de um elemento estrutural.<br>
-          Esforço Cortante: São esforços que atuam perpendicular ao eixo do elemento estrutural.<br>
-          Momento Fletor: São esforços que causam flexão em um elemento estrutural.
+  <section id="professor">
+    <h2 class="section-title"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i> O Professor</h2>
+    <div class="feature-grid">
+      <div class="feature-card academic">
+        <i class="feature-icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
+        <h3 class="feature-title">Formação Acadêmica</h3>
+        <p class="feature-description">Graduado em Engenharia Civil pela UNOESTE - Universidade do Oeste Paulista</p>
+        <div class="feature-tag">
+          <i class="fa-solid fa-award"></i>
+          <span>Formação de Excelência</span>
         </div>
-      </li>
-      
-      <li>
-        <strong>Pré-dimensionamento de Vigas, Lajes e Pilares</strong><br>
-        <div class="item-description">
-          Antes do cálculo, aplica-se métodos para estimar as dimensões iniciais destes elementos estruturais, considerando cargas e limites aceitáveis.
+      </div>
 
+      <div class="feature-card specialization">
+        <i class="feature-icon fa-solid fa-certificate" aria-hidden="true"></i>
+        <h3 class="feature-title">Especialização</h3>
+        <p class="feature-description">Pós-graduado em Engenharia de Estruturas pela UNOESTE, com foco em projetos
+          estruturais avançados</p>
+        <div class="feature-tag">
+          <i class="fa-solid fa-star"></i>
+          <span>Especialista em Estruturas</span>
         </div>
-      </li>
-      
-      <li>
-        <strong>Cálculo e Detalhamento de Vigas</strong><br>
-        <div class="item-description">
-          Envolve a determinação das dimensões e armaduras adequadas para as vigas, garantindo que elas suportem as cargas aplicadas.
-        </div>
-      </li>
+      </div>
 
-      <li>
-        <strong>Cálculo e Detalhamento de Lajes Maciças</strong><br>
-        <div class="item-description">
-        Similar às vigas, mas aplicado às lajes maciças, garantindo que a espessura e a distribuição da armadura sejam suficientes para suportar as cargas.</div>
-      </li>
-      
-      <li>
-        <strong>Cálculo e Detalhamento de Lajes Treliçadas</strong><br>
-        <div class="item-description">
-        Similar às Lajes Maciças, mas aplicado às lajes treliçadas, garantindo que a armadura seja suficiente para suportar as cargas.</div>
-      </li>
-      
-      <li>
-        <strong>Cálculo e Detalhamento de Pilares</strong><br>
-        <div class="item-description">
-          Determina a armadura necessária para suportar os esforços e garantir a estabilidade da estrutura.
+      <div class="feature-card teaching">
+        <i class="feature-icon fa-solid fa-chalkboard-user" aria-hidden="true"></i>
+        <h3 class="feature-title">Experiência Docente</h3>
+        <p class="feature-description">Docente de cursos livres na área de engenharia de estruturas, com mais de 5 anos
+          de experiência em ensino</p>
+        <div class="feature-tag">
+          <i class="fa-solid fa-chalkboard"></i>
+          <span>Professor Experiente</span>
         </div>
-      </li>
-      
-      <li>
-        <strong>Cálculo e Detalhamento de Fundação Rasa (Sapata Isolada)</strong><br>
-        <div class="item-description">
-          Envolve o dimensionamento de sapatas isoladas rígidas, que distribuem as cargas dos pilares para o solo.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Cálculo e Detalhamento de Fundação Profunda (Estaca - Compressão)</strong><br>
-        <div class="item-description">
-          Relacionado ao dimensionamento de estacas sujeitas a compressão.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Cálculo de Elementos com Esforço Predominante a Flexão</strong><br>
-        <div class="item-description">
-          Aborda o dimensionamento de elementos estruturais onde os esforços de flexão são dominantes.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Introdução ao Software Eberick</strong><br>
-        <div class="item-description">
-          Apresentação do software Eberick, uma ferramenta de engenharia estrutural utilizada para análise e dimensionamento de estruturas.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Preparação da Arquitetura para Importação no Eberick</strong><br>
-        <div class="item-description">
-          Envolve a adaptação e configuração do modelo arquitetônico para ser importado no software Eberick.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Lançamento da Estrutura no Eberick</strong><br>
-        <div class="item-description">
-          Processo de entrada de dados e geometria no software Eberick para realizar análise e dimensionamento estrutural.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Aplicação dos Carregamentos Conforme as Normas Vigentes</strong><br>
-        <div class="item-description">
-          Considera a aplicação de cargas na estrutura de acordo com normas técnicas para garantir que o projeto atenda a requisitos de segurança.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Processamento, Análise e Eficiência do Projeto Estrutural</strong><br>
-        <div class="item-description">
-          Engloba a execução da análise estrutural no software Eberick, processamento de dados e avaliação da eficiência do projeto.
-        </div>
-      </li>
-      
-      <li>
-        <strong>Detalhamento dos Elementos Estruturais e Formas</strong><br>
-        <div class="item-description">
-          Inclui a definição precisa das dimensões, posições e tipos de todos os elementos estruturais, além do detalhamento de suas formas construtivas.
-        </div>
-      </li>
-    </ul>
-  </section>
-  
+      </div>
 
-  <section>
-    <h2><i class="fa-regular fa-clock"></i>Duração do Curso</h2>
-    <p>
-      A duração do curso é de 6 meses, com aulas uma vez por semana.
-    </p>
-    <p><h4>Ou alternativamente</h4></p>
-    <p>Intensivo de 3 meses com aulas duas vezes por semana.</p>
-  </section>
+      <div class="feature-card postgrad">
+        <i class="feature-icon fa-solid fa-building-columns" aria-hidden="true"></i>
+        <h3 class="feature-title">Pós-Graduação</h3>
+        <p class="feature-description">Docente no curso de Pós-graduação em "Engenharia de estruturas de concreto armado
+          e alvenaria estrutural" - UNOESTE</p>
+        <div class="feature-tag">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Mestre em Ensino</span>
+        </div>
+      </div>
 
-  <section>
-    <h2><i class="fa-solid fa-cart-shopping"></i> Valores</h2>
-    <p> 
-      <i class="fa-solid fa-person"></i><i class="fa-solid fa-person"></i> <strong>Em Turma (duração de 6 meses):</strong> 
-      <div>&nbsp&nbspInvestimento de R$ 2.100,00, podendo ser parcelado em 6 vezes de R$ 350,00 via Pix. Sendo 1 entrada de R$350,00 + 5 parcelas de R$350,00.</div>
-    </p>
-    <p> 
-      <i class="fa-solid fa-person"></i><i class="fa-solid fa-person"></i> <strong>Em Turma (duração de 3 meses):</strong>
-      <div>&nbsp&nbspInvestimento de R$ 2.100,00, podendo ser parcelado em 3 vezes de R$ 700,00 via Pix. Sendo 1 entrada de R$700,00 + 2 parcelas de R$700,00.</div>
-    </p>
-    <p><em>
-      <h4>
-        <i class="alert fa-solid fa-triangle-exclamation"></i>
-        OBS: <p> 
-	      <div>- Condições de pagamento acima são para parcelamento no Pix ou Dinheiro em espécie.</div>
-	     </p>
-	      <p> 
-	      <div>- Para o Parcelamento no Pix ou Dinheiro em espécie, será permitido o atraso de no máximo 1 aula (aproximadamente 10 dias) ficando configurado desistência do aluno a partir da segunda aula de atraso até a quitação integral do debito em atraso.</div>
-	     </p>
-	      <p> 
-	      <div>- Lembrando que para o parcelamento no Pix ou Dinheiro em espécie, a quantidade de parcelas será o mesmo tempo de duração do curso.</div> 
-	     </p>
-	      <p> 
-	      <div>- No cartão de crédito, o valor do curso é o mesmo, porém com acréscimo dos juros da máquina.</div></em></p>
-      </h4>
-  </section>
-  
-  <section class="subscribe-section">
-        <a href="https://forms.gle/tMKb2VsweBV9XQNh8" target="_blank">
-		<h2><i class="fa-solid fa-arrow-right-to-bracket"></i> Inscreva-se</h2>
-	</a>
-  </section>
-  
-
-  <section>
-    <h2><i class="fa-solid fa-address-book"></i> Para Mais Informações</h2> 
-      <p>
-        <a target="_blank" href="https://wa.me/55189966660433" class="contact-link">
-          <i class="fab fa-whatsapp"></i>(18)99666-0433
-        </a>
-      </p>
-      <p>
-        <a target="_blank" href="mailto:mmbjrma@gmail.com" class="contact-link">
-          <i class="fas fa-envelope"></i>mmbjrma@gmail.com
-        </a>
-      </p>
-	    <p>
-        <a style="cursor: pointer;" onclick="openGoogleMapsWith()" href="#" class="contact-link">
-          <i class="fa-solid fa-location-dot"></i>Rui Barbosa, nº 1737, Jd. Sta. Helena
-        </a>
-      </p>
+      <div class="feature-card professional">
+        <i class="feature-icon fa-solid fa-briefcase" aria-hidden="true"></i>
+        <h3 class="feature-title">Experiência Profissional</h3>
+        <p class="feature-description">Engenheiro estrutural na 2MB Engenharia e Projetos, com vasta experiência em
+          projetos residenciais e comerciais</p>
+        <div class="feature-tag">
+          <i class="fa-solid fa-building"></i>
+          <span>Profissional Atuante</span>
+        </div>
+      </div>
     </div>
   </section>
 
+  <section id="conteudo">
+    <h2 class="section-title"><i class="fa-solid fa-bullseye"></i> Conteúdo Programático do Curso</h2>
+    <div class="section-content">
+      <div class="feature-grid">
+        <div class="feature-card units">
+          <i class="feature-icon fa-solid fa-calculator" aria-hidden="true"></i>
+          <h3 class="feature-title">Conversão de Unidades</h3>
+          <p class="feature-description">Antes de qualquer cálculo é imprescindível entender o processo de conversão de
+            unidades, já que muitas vezes necessitamos converter as unidades para prosseguir com os cálculos.</p>
+          <div class="feature-tag">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <span>Fundamento Essencial</span>
+          </div>
+        </div>
 
-  <script>
-    function openGoogleMapsWith(){
-      const lat = "-22.119333599999997"
-      const long = "-51.399502399999996"
+        <div class="feature-card efforts">
+          <i class="feature-icon fa-solid fa-ruler-combined" aria-hidden="true"></i>
+          <h3 class="feature-title">Cálculo de Esforços Simples</h3>
+          <p class="feature-description">Esforço Normal, Cortante e Momento Fletor: compreenda os fundamentos dos
+            esforços que atuam nos elementos estruturais e suas aplicações práticas.</p>
+          <div class="feature-tag">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <span>Base do Cálculo</span>
+          </div>
+        </div>
 
-      if( (navigator.platform.indexOf("iPhone") != -1) 
-            || (navigator.platform.indexOf("iPod") != -1)
-            || (navigator.platform.indexOf("iPad") != -1)) {
-        window.open(`maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${lat},${long}`);
-        return
-      }
-      window.open(`https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${lat},${long}`);
-    }
-  </script>
+        <div class="feature-card predimension">
+          <i class="feature-icon fa-solid fa-cube" aria-hidden="true"></i>
+          <h3 class="feature-title">Pré-dimensionamento</h3>
+          <p class="feature-description">Aprenda a estimar as dimensões iniciais de vigas, lajes e pilares, considerando
+            cargas e limites aceitáveis para um projeto eficiente.</p>
+          <div class="feature-tag">
+            <i class="fa-solid fa-ruler"></i>
+            <span>Dimensões Iniciais</span>
+          </div>
+        </div>
+
+        <div class="feature-card detailing">
+          <i class="feature-icon fa-solid fa-building" aria-hidden="true"></i>
+          <h3 class="feature-title">Cálculo e Detalhamento</h3>
+          <p class="feature-description">Domine o dimensionamento e detalhamento de vigas, lajes e pilares, garantindo a
+            segurança estrutural e a conformidade com as normas.</p>
+          <div class="feature-tag">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <span>Projeto Completo</span>
+          </div>
+        </div>
+
+        <div class="feature-card foundations">
+          <i class="feature-icon fa-solid fa-layer-group" aria-hidden="true"></i>
+          <h3 class="feature-title">Fundações</h3>
+          <p class="feature-description">Aprenda sobre fundações rasas e profundas, incluindo sapatas isoladas e
+            estacas, com foco na segurança e economia do projeto.</p>
+          <div class="feature-tag">
+            <i class="fa-solid fa-mountain"></i>
+            <span>Base Estrutural</span>
+          </div>
+        </div>
+
+        <div class="feature-card software">
+          <i class="feature-icon fa-solid fa-laptop-code" aria-hidden="true"></i>
+          <h3 class="feature-title">Software Eberick</h3>
+          <p class="feature-description">Introdução ao software Eberick, desde a preparação da arquitetura até o
+            detalhamento final dos elementos estruturais, com exemplos práticos.</p>
+          <div class="feature-tag">
+            <i class="fa-solid fa-computer"></i>
+            <span>Ferramenta Profissional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="duracao">
+    <h2 class="section-title"><i class="fa-regular fa-clock"></i> Duração do Curso</h2>
+    <div class="duration-grid">
+      <div class="duration-card regular">
+        <div class="duration-icon">
+          <i class="fa-solid fa-calendar-week"></i>
+        </div>
+        <div class="duration-content">
+          <h3>Turma Regular</h3>
+          <p>6 meses de duração</p>
+          <p class="duration-detail">Aulas uma vez por semana</p>
+          <div class="duration-tag">
+            <i class="fa-solid fa-check"></i>
+            <span>Ideal para quem prefere um ritmo mais tranquilo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="duration-card intensive">
+        <div class="duration-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="duration-content">
+          <h3>Turma Intensiva</h3>
+          <p>3 meses de duração</p>
+          <p class="duration-detail">Aulas duas vezes por semana</p>
+          <div class="duration-tag">
+            <i class="fa-solid fa-fire"></i>
+            <span>Perfeito para quem quer resultados rápidos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="valores">
+    <h2 class="section-title"><i class="fa-solid fa-cart-shopping"></i> Valores</h2>
+    <div class="feature-grid">
+      <div class="value-item regular">
+        <div class="value-icon">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="value-content">
+          <h3 class="value-title">Turma Regular (6 meses)</h3>
+          <p class="value-description">
+            Investimento: R$ 2.100,00<br>
+            Parcelamento: 6x de R$ 350,00 via Pix<br>
+            (1 entrada + 5 parcelas)
+          </p>
+          <div class="value-tag">
+            <i class="fa-solid fa-check"></i>
+            <span>Plano ideal para quem prefere pagar em mais parcelas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="value-item intensive">
+        <div class="value-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="value-content">
+          <h3 class="value-title">Turma Intensiva (3 meses)</h3>
+          <p class="value-description">
+            Investimento: R$ 2.100,00<br>
+            Parcelamento: 3x de R$ 700,00 via Pix<br>
+            (1 entrada + 2 parcelas)
+          </p>
+          <div class="value-tag">
+            <i class="fa-solid fa-fire"></i>
+            <span>Plano ideal para quem quer concluir mais rápido</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="warning-box">
+      <h4><i class="fa-solid fa-triangle-exclamation"></i> Observações Importantes</h4>
+      <ul>
+        <li>
+          <i class="fa-solid fa-money-bill-1"></i>
+          <span>Condições de pagamento acima são para parcelamento no Pix ou Dinheiro em espécie.</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i>
+          <span>Para o Parcelamento no Pix ou Dinheiro em espécie, será permitido o atraso de no máximo 1 aula
+            (aproximadamente 10 dias) ficando configurado desistência do aluno a partir da segunda aula de atraso até a
+            quitação integral do debito em atraso.</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Lembrando que para o parcelamento no Pix ou Dinheiro em espécie, a quantidade de parcelas será o mesmo
+            tempo
+            de duração do curso.</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-credit-card"></i>
+          <span>No cartão de crédito, o valor do curso é o mesmo, porém com acréscimo dos juros da máquina.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="subscribe-section">
+    <a href="https://forms.gle/tMKb2VsweBV9XQNh8" target="_blank" class="cta-button">
+      <div class="cta-content">
+        <div class="cta-icon">
+          <i class="fa-solid fa-file-pen"></i>
+        </div>
+        <div class="cta-text">
+          <h2>Inscreva-se Agora</h2>
+          <p>Preencha o formulário e garanta sua vaga no curso mais completo de cálculo estrutural</p>
+        </div>
+        <div class="cta-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <section id="contato">
+    <h2 class="section-title"><i class="fa-solid fa-address-book"></i> Entre em Contato</h2>
+    <div class="contact-grid">
+      <a target="_blank" href="https://wa.me/55189966660433" class="contact-card">
+        <div class="contact-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="contact-content">
+          <h3>WhatsApp</h3>
+          <p>(18) 99666-0433</p>
+        </div>
+        <div class="contact-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <a target="_blank" href="mailto:mmbjrma@gmail.com" class="contact-card">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-content">
+          <h3>E-mail</h3>
+          <p>mmbjrma@gmail.com</p>
+        </div>
+        <div class="contact-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <a style="cursor: pointer;" onclick="openGoogleMapsWith()" href="#" class="contact-card">
+        <div class="contact-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="contact-content">
+          <h3>Endereço</h3>
+          <p>Rui Barbosa, nº 1737, Jd. Sta. Helena</p>
+        </div>
+        <div class="contact-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fa-solid fa-city" aria-hidden="true"></i>
+        <span>Eng. Morandir Jr.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#professor" class="footer-link">Professor</a>
+        <a href="#conteudo" class="footer-link">Conteúdo</a>
+        <a href="#valores" class="footer-link">Valores</a>
+        <a href="#contato" class="footer-link">Contato</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://wa.me/55189966660433" class="social-link" target="_blank">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:mmbjrma@gmail.com" class="social-link" target="_blank">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <p class="copyright">
+        © 2025 Eng. Morandir Jr. - Todos os direitos reservados
+      </p>
+    </div>
+  </footer>
 </body>
 
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633600614">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16633600614');
-</script>
 </html>
