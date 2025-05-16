@@ -1406,3 +1406,224 @@ html {
   border-color: var(--primary-color);
   box-shadow: 0 5px 15px rgba(255, 204, 0, 0.1);
 }
+
+/* Seção de Inscrição */
+.subscribe-section {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(42, 42, 42, 0.95) 100%);
+  border-top: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding: 40px 20px;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.subscribe-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.subscribe-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.subscribe-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  line-height: 1.4;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 15px;
+  border-radius: 8px;
+  border-left: 3px solid var(--primary-color);
+}
+
+.benefit-item i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.pricing-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.price-tag {
+  background: rgba(255, 204, 0, 0.1);
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.installments {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.discount-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: rgba(255, 87, 34, 0.1);
+  border-radius: 50px;
+  color: #ff5722;
+  font-weight: 500;
+}
+
+.guarantee-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: rgba(40, 167, 69, 0.1);
+  border-radius: 50px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* Botão CTA melhorado */
+.cta-button {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(255, 204, 0, 0.2) 0%, rgba(255, 204, 0, 0.15) 100%);
+  border: 2px solid var(--primary-color);
+  width: 100%;
+  max-width: 500px;
+}
+
+.cta-button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(135deg, rgba(255, 204, 0, 0.25) 0%, rgba(255, 204, 0, 0.2) 100%);
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.2);
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cta-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  background: rgba(255, 204, 0, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 60px;
+}
+
+.cta-text {
+  flex: 1;
+  text-align: left;
+}
+
+.cta-text h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.cta-text p {
+  color: var(--text-color);
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.cta-content .fa-arrow-right {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .fa-arrow-right {
+  transform: translateX(5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .subscribe-title {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+  }
+  
+  .cta-text h3 {
+    font-size: 1.1rem;
+  }
+  
+  .cta-text p {
+    font-size: 0.9rem;
+  }
+  
+  .cta-icon {
+    font-size: 1.5rem;
+    padding: 12px;
+    min-width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-title {
+    font-size: 1.3rem;
+  }
+  
+  .benefit-item {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .cta-content {
+    gap: 15px;
+  }
+}

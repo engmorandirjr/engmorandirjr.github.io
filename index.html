@@ -77,9 +77,18 @@
         <i class="fa-solid fa-bars"></i>
       </button>
       <div class="nav-links">
-        <a href="#professor" class="nav-link" aria-label="Seção do Professor">Professor</a>
-        <a href="#conteudo" class="nav-link" aria-label="Conteúdo do Curso">Conteúdo</a>
-        <a href="#valores" class="nav-link" aria-label="Valores do Curso">Valores</a>
+        <a href="#professor" class="nav-link" aria-label="Seção do Professor">
+          <span>Professor</span>
+        </a>
+        <a href="#conteudo" class="nav-link" aria-label="Conteúdo do Curso">
+          <span>Conteúdo</span>
+        </a>
+        <a href="#valores" class="nav-link" aria-label="Valores do Curso">
+          <span>Valores</span>
+        </a>
+        <a href="#inscricao" class="nav-link" aria-label="Inscrição">
+          <span>Inscrição</span>
+        </a>
         <a href="#contato" class="nav-link" aria-label="Informações de Contato">Contato</a>
       </div>
     </div>
@@ -100,7 +109,7 @@
           </span>
         </h1>
         <div class="title-tag">
-          <i class="fa-solid fa-certificate"></i>
+          <i class="fa-solid fa-solid fa-gear"></i>
           <span>Curso Profissional</span>
         </div>
       </div>
@@ -122,7 +131,7 @@
       </div>
 
       <div class="feature-card specialization">
-        <i class="feature-icon fa-solid fa-certificate" aria-hidden="true"></i>
+        <i class="feature-icon fa-solid fa-glasses" aria-hidden="true"></i>
         <h3 class="feature-title">Especialização</h3>
         <p class="feature-description">Pós-graduado em Engenharia de Estruturas pela UNOESTE, com foco em projetos
           estruturais avançados</p>
@@ -144,13 +153,13 @@
       </div>
 
       <div class="feature-card postgrad">
-        <i class="feature-icon fa-solid fa-building-columns" aria-hidden="true"></i>
+        <i class="feature-icon  fa-solid fa-school"  aria-hidden="true"></i>
         <h3 class="feature-title">Pós-Graduação</h3>
         <p class="feature-description">Docente no curso de Pós-graduação em "Engenharia de estruturas de concreto armado
           e alvenaria estrutural" - UNOESTE</p>
         <div class="feature-tag">
           <i class="fa-solid fa-graduation-cap"></i>
-          <span>Mestre em Ensino</span>
+          <span>Especialista em Ensino</span>
         </div>
       </div>
 
@@ -342,21 +351,59 @@
     </div>
   </section>
 
-  <section class="subscribe-section">
-    <a href="https://forms.gle/tMKb2VsweBV9XQNh8" target="_blank" class="cta-button">
-      <div class="cta-content">
-        <div class="cta-icon">
-          <i class="fa-solid fa-file-pen"></i>
+  <section class="subscribe-section" id="inscricao">
+    <div class="subscribe-container">
+      <div class="subscribe-content">
+        <h2 class="subscribe-title">
+          <i class="fa-solid fa-graduation-cap"></i>
+          Garanta Sua Vaga no Curso!
+        </h2>
+        
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Aulas teóricas e práticas</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Material didático</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Certificado de conclusão</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Suporte do professor</span>
+          </div>
         </div>
-        <div class="cta-text">
-          <h2>Inscreva-se Agora</h2>
-          <p>Preencha o formulário e garanta sua vaga no curso mais completo de cálculo estrutural</p>
-        </div>
-        <div class="cta-arrow">
-          <i class="fa-solid fa-arrow-right"></i>
+        
+        <div class="pricing-info">
+          <div class="discount-tag">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Vagas limitadas por turma</span>
+          </div>
         </div>
       </div>
-    </a>
+      
+      <a href="https://forms.gle/tMKb2VsweBV9XQNh8" target="_blank" class="cta-button" onclick="gtag_report_conversion()">
+        <div class="cta-content">
+          <div class="cta-icon">
+            <i class="fa-solid fa-file-pen"></i>
+          </div>
+          <div class="cta-text">
+            <h3>Quero me inscrever agora!</h3>
+            <p>Preencha o formulário e comece sua jornada no cálculo estrutural</p>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+      
+      <div class="guarantee-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>7 dias de garantia satisfação</span>
+      </div>
+    </div>
   </section>
 
   <section id="contato">
